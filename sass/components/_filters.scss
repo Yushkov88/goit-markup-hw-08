@@ -1,0 +1,41 @@
+.filters {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__btn {
+    font-family: inherit;
+    background-color: var(--bcg-team-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+  &__list .current {
+    background-color: var(--accent-color);
+    color: var(--icon-bgc);
+    cursor: pointer;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: var(--accent-color);
+    color: var(--bcg-team-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}

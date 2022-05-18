@@ -1,0 +1,10 @@
+.logo {
+  color: var(--logo);
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+  &__web {
+    color: var(--accent-color);
+  }
+}
