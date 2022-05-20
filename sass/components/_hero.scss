@@ -1,10 +1,9 @@
 .hero {
   background-color: var(--bgc-hero-footer);
-  padding: 200px 0;
-  padding: 60px 0;
+  padding-top: 118px;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -17,20 +16,59 @@
   background-size: cover;
   background-position: center;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../Image/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../Image/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   &__title {
     background-color: inherit;
     color: #ffffff;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    min-width: 696px;
+    min-width: 360px;
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      min-width: 696px;
+    }
   }
 
   &__btn {
@@ -44,6 +82,7 @@
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
+    cursor: pointer;
     align-items: center;
     text-align: center;
     border: 1px solid transparent;
@@ -53,8 +92,5 @@
   &__btn:focus,
   &__btn:active {
     background-color: var(--accent-color);
-    color: #ffffff;
-    cursor: pointer;
-    padding: 10px 32px;
   }
 }
