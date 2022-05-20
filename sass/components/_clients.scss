@@ -1,22 +1,43 @@
 .clients {
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
-  }
+    margin-bottom: 30px;
 
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
+  }
   &__list {
-    display: flex;
     justify-content: center;
-  }
+    margin-bottom: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
 
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
   &__link {
-    margin: 0;
-    padding: 0;
-    width: 170px;
+    width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
@@ -29,6 +50,15 @@
     transition-property: fill, border, box-sizing, border-radius;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
   }
 
   &__link:hover,
@@ -40,7 +70,7 @@
     border-radius: 4px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
