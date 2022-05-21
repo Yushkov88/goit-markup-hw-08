@@ -1,5 +1,5 @@
 .subscribe {
-  margin-left: 93px;
+  // margin-left: 93px;
 
   &__title {
     font-weight: 700;
@@ -8,28 +8,32 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-left: 131px;
     margin-bottom: 20px;
   }
 
   &__label {
-    margin-right: 12px;
+    // margin-right: 12px;
+    margin-right: 16px;
   }
-  &__icon {
-    margin-left: 10px;
-    fill: #ffffff;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+.subsсribe__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subsсribe__form {
-  display: flex;
-}
+// .subsсribe__form {
+//   display: flex;
+// }
 
 .subsсribe__email {
   padding: 15px 16px;
-  width: 358px;
+  // width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -39,6 +43,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .subsсribe__btn {
+  margin-left: 140px;
   display: flex;
   align-items: center;
   width: 200px;

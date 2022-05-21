@@ -113,8 +113,18 @@ img {
   color: var(--logo);
   text-decoration: none;
   font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-left: 163px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-left: 115px;
+  }
 }
 .logo__web {
   color: var(--accent-color);
@@ -551,8 +561,7 @@ img {
 
 .footer {
   background-color: var(--bgc-hero-footer);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .footer__logo {
   font-family: "Raleway";
@@ -560,9 +569,11 @@ img {
 }
 .footer__adr {
   margin-top: 20px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .footer__list .footer__address {
   color: #ffffff;
@@ -593,18 +604,17 @@ img {
   color: var(--accent-color);
 }
 
-.container__footer {
-  display: flex;
-  align-items: baseline;
-}
 .container__footer__address {
   flex-grow: 1;
 }
 
-.join {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .join {
+    display: flex;
+  }
 }
 .join__title {
+  margin-left: 167px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -615,7 +625,8 @@ img {
 }
 .join__list {
   display: flex;
-  justify-content: center;
+  margin-left: 137px;
+  margin-bottom: 60px;
 }
 .join__link {
   padding: 0;
@@ -639,9 +650,6 @@ img {
   border-radius: 50%;
 }
 
-.subscribe {
-  margin-left: 93px;
-}
 .subscribe__title {
   font-weight: 700;
   font-size: 14px;
@@ -649,12 +657,14 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: 131px;
   margin-bottom: 20px;
 }
 .subscribe__label {
-  margin-right: 12px;
+  margin-right: 16px;
 }
-.subscribe__icon {
+
+.subsсribe__icon {
   margin-left: 10px;
   fill: #ffffff;
   transition-property: fill;
@@ -662,13 +672,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subsсribe__form {
-  display: flex;
-}
-
 .subsсribe__email {
   padding: 15px 16px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -679,6 +686,7 @@ img {
 }
 
 .subsсribe__btn {
+  margin-left: 140px;
   display: flex;
   align-items: center;
   width: 200px;

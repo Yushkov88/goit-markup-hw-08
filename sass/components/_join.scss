@@ -1,7 +1,11 @@
 .join {
-  margin-left: 70px;
+  // margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   &__title {
+    margin-left: 167px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -13,7 +17,9 @@
 
   &__list {
     display: flex;
-    justify-content: center;
+    margin-left: 137px;
+    margin-bottom: 60px;
+    // justify-content: center;
   }
 
   &__link {
