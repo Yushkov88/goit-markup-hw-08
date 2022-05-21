@@ -17,3 +17,16 @@
     margin-right: 10px;
   }
 }
+.header__logo,
+.footer__logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-text-color);
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.logo__color {
+  color: var(--accent-color);
+}

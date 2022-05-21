@@ -54,12 +54,19 @@ img {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+.link {
+  text-decoration: none;
+  color: var(--bcg-team-color);
+}
 .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 
@@ -75,10 +82,9 @@ img {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 
   @media screen and (max-width: 1200px) {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding: 94px 0;
   }
 }
