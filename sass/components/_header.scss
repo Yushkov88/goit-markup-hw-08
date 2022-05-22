@@ -1,19 +1,215 @@
 .header {
   border-bottom: 1px solid #ececec;
+  > .container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
 
-  & .container {
+.menu-open-icon,
+.menu-close-icon {
+  transition: fill 250ms var(--cubic-bezier);
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-open-btn,
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu-open-btn {
+  @media screen and (min-width: 768px) {
+    display: none;
+    width: 0;
+    margin-left: 0;
+  }
+}
+
+.menu-close-btn {
+  padding: 0;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background-color: var(--icon-bgc);
+  height: 100vh;
+  width: 100vw;
+  .container {
+    padding-top: 10px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  & .link {
+    color: var(--primary-text-color);
+  }
+  & .current {
+    color: var(--accent-color);
+  }
+}
+
+.mob-connect__item {
+  & .phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  & .mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-soc-list {
+  display: flex;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+
+.mob-soc-list-item {
+  &:not(:first-child) {
+    padding-left: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
+  & .mob-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
+
+.navigation .link {
+  color: var(--primary-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+  display: none;
+}
+
+.navigation__item {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.connect__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.connect__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #212121;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    padding-top: 32px;
+    padding-bottom: 32px;
+    & + & {
+      margin-left: 30px;
+    }
+  }
+  .link.phone,
+  .link.mail {
     display: flex;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
-    padding: 0;
-  }
+}
 
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.2;
+.connect__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.link.link--current {
+  color: var(--accent-color);
+  padding-bottom: 0;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    margin-top: 28px;
   }
 }
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 .header__logo,
 .footer__logo {
   text-decoration: none;
@@ -24,6 +220,16 @@
   line-height: 1.4;
   letter-spacing: 0.03em;
 }
+
+.navigation__item .link,
+.connect__item .link {
+  transition: color 250ms var(--cubic-bezier);
+}
+
 .logo__color {
   color: var(--accent-color);
+}
+
+.connect__item {
+  color: var(--secondary-text-color);
 }

@@ -18,7 +18,7 @@ html {
 .page {
   font-family: 'Roboto', 'sans-serif';
   background-color: #ffffff;
-  letter-spacing: 0.03em;
+  color: #212121;
 }
 .visually-hidden {
   position: absolute;
@@ -59,7 +59,7 @@ img {
 }
 .link {
   text-decoration: none;
-  color: var(--bcg-team-color);
+  color: var(--secondary-text-color);
 }
 .container {
   width: 100%;
