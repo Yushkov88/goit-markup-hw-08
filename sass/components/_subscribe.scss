@@ -1,6 +1,4 @@
 .subscribe {
-  // margin-left: 93px;
-
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -13,7 +11,6 @@
   }
 
   &__label {
-    // margin-right: 12px;
     margin-right: 16px;
   }
 }
@@ -25,13 +22,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .subsсribe__form {
-//   display: flex;
-// }
-
 .subsсribe__email {
   padding: 15px 16px;
-  // width: 358px;
   margin-bottom: 20px;
   width: 450px;
   height: 50px;
