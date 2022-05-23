@@ -622,7 +622,7 @@ img {
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: var(--secondary-text-color);
+  background-color: var(--icon-bgc);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -632,7 +632,7 @@ img {
 }
 .team-soc-link:hover, .team-soc-link:focus {
   background-color: var(--accent-color);
-  fill: var(--secondary-text-color);
+  fill: var(--icon-bgc);
 }
 
 .team-soc-item + .team-soc-item {
