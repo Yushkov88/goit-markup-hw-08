@@ -559,7 +559,7 @@ img {
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--secondary-text-color);
+  background-color: var(--icon-bgc);
   padding-bottom: 30px;
   margin-top: 30px;
 }
@@ -622,7 +622,7 @@ img {
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: var(--icon-bgc);
+  background-color: var(--secondary-text-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -632,7 +632,7 @@ img {
 }
 .team-soc-link:hover, .team-soc-link:focus {
   background-color: var(--accent-color);
-  fill: var(--icon-bgc);
+  fill: var(--secondary-text-color);
 }
 
 .team-soc-item + .team-soc-item {
