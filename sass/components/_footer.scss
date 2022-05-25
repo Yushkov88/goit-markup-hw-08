@@ -1,6 +1,9 @@
 .footer {
   background-color: var(--bgc-hero-footer);
   padding: 60px 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -13,9 +16,12 @@
 .address-tab {
   display: flex;
   justify-content: center;
+
   flex-direction: column;
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     justify-content: left;
@@ -73,8 +79,8 @@
   text-align: center;
   margin-top: 60px;
   @media screen and (min-width: 768px) {
-    margin-top: 5px;
-    margin-left: 162px;
+    // margin-top: 5px;
+    // margin-left: 162px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;

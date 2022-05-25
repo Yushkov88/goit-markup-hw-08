@@ -124,11 +124,16 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.navigation {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+}
 
 .navigation__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
